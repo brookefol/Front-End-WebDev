@@ -18,46 +18,84 @@
         
         <h4>Please fill out this short form for registration:</h4>
 
-        <!-- username, password, email-->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <form> <!-- username, password, email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <br><br>
+    
+            <label for="username">Username:</label>
+            <input type="text" id="username" name = "username" required >
+    
+    
+            <br><br>
+    
+    
+            <label for="password">Password:</label>
+            <input type="password" id = "password" name="password" required>
+    
+            <br><br>
+    
+        <!-- grade levels -->
+            <p> Select your grade level: </p>
+            <input type = "radio" value = "Kindergarten" id = "option-1">
+    
+            <label for="option-1">Kindergarten</label>
+    
+            <input type = "radio" value = "1st-5th" id = "option-2">
+    
+            <label for="option-2">1st-5th grade</label>
+    
+    
+            <input type = "radio" value = "6th-8th" id = "option-3">
+    
+            <label for="option-3">6th-8th grade</label>
+                 
+                
+            <input type = "radio" value = "9th-12th" id = "option-4">
+    
+            <label for="option-4">9th-12th grade</label>
+    
+            <input type = "radio" value = "12+" id = "option-5">
+            <label for="option-5">College and Beyond</label>
+    
+            <br> <br><br>
+    
+            <label for="">What are you most excited to learn?</label>
+            <select name="question" id="question">
+                <option value="q1">Fundamental Languages: Java, Python, etc...</option>
+                <option value="q2">Web Dev Languages: HTML, CSS, JavaScript, etc...</option>
+                <option value="q3">Game Development and Project Creation Languages: C++, Greenfoot, etc...</option>
+                <option value="q4">Something else!</option>
+    
+                <br><br>
+    
+                
+            </select>
+    
+            <br><br>
+    
+            <label for="bio">Finally, tell us a little about yourself!</label>
+            <br>
+            <textarea name = "bio" id = "bio" cols = "30" rows = "10" placeholder = "type here...">
+    
+            </textarea>
+    
+            <br><br>
+    
+            <input type = "submit" value = "Submit your Form and Join the World of Lessons in Code!">
+         </form>
 
-        <br><br>
 
-        <label for="username">Username:</label>
-        <input type="text" id="username" name = "username" required >
+         <br> <br>
 
+         <a href = https://www.w3schools.com> Begin your coding journey! </a>
+         
+         <ul></ul>
 
-        <br><br>
-
-
-        <label for="password">Password:</label>
-        <input type="password" id = "password" name="password" required>
-
-        <br><br>
-
-    <!-- grade levels -->
-        <p> Select your grade level: </p>
-        <input type = "radio" value = "Kindergarten" id = "option-1">
-
-        <label for="option-1">Kindergarten</label>
-
-        <input type = "radio" value = "1st-5th" id = "option-2">
-
-        <label for="option-2">1st-5th grade</label>
-
-
-        <input type = "radio" value = "6th-8th" id = "option-3">
-
-        <label for="option-3">6th-8th grade</label>
-             
-            
-        <input type = "radio" value = "9th-12th" id = "option-4">
-
-        <label for="option-4">9th-12th grade</label>
-
-        <input type = "radio" value = "12+" id = "option-5">
         
+
+
 
 
 
