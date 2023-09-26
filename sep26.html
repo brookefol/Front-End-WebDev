@@ -1,6 +1,18 @@
 <html>
-    <head>
+    <head> <!--Materialize Links -->
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <title>Learning Materialize</title>
+    <!-- you can overrrule downloaded CSS commands with your own basic css commands-->
+        <style>
+            .box {
+                height: 200px; 
+                        }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -9,58 +21,63 @@
             <h3>Heading 3</h3>
             <h4>Heading 4</h4>
             <h5>Heading 5</h5>
-        </div>
+        </div> <!--squishes text--> <!--by importing materialize, you can use their CSS attributes-->
+
 
         <!-- Colors -->
         <div class="container">
-            <h5>Be yourself, everyone else is already taken</h5>
-            <h5>
+            <h5 class="light-blue darken-4">Be yourself, everyone else is already taken</h5>
+            <h5 class = "orange lighten-4">
                 We are all in the gutter, but some of us are looking at the
                 stars
             </h5>
-            <h5>
+            <h5 class = "purple darken-3 white text">
                 To live is the rarest thing in the world. Most people exist,
                 that is all
             </h5>
-            <h5>Experience is simply the name we give our mistakes</h5>
-            <h5>Always forgive your enemies - nothing annoys them so much</h5>
+            <h5 class = "teal darken-2 yellow-text text-lighten 3">Experience is simply the name we give our mistakes</h5>
+            <h5 class = "blue-grey lighten-4">Always forgive your enemies - nothing annoys them so much</h5>
         </div>
 
         <!-- Alignment -->
         <div class="container">
-            <h5>Center alignment</h5>
-            <h5>Left alignment</h5>
-            <h5>Right alignment</h5>
+            <h5 class = "center-align">Center alignment</h5> <!--classes control color, alignment, etc.-->
+            <h5 class = "left-align">Left alignment</h5>
+            <h5 class = "right-align">Right alignment</h5>
         </div>
 
         <!-- Create your own styles -->
-        <div class="container">
+        <div class="container grey lighten-2 box valign-wrapper">
             <h5>Vertical alignment</h5>
         </div>
 
         <div class="container">
-            <h4>Buttons</h4>
-            <a href="#">Normal button</a>
-            <a href="#">Small button</a>
-            <a href="#">Large button</a>
-            <a href="#">Indigo button</a>
-            <a href="#">Disabled button</a>
+            <h4>Buttons</h4> <!-- # = fake links, don't lead anywhere-->
+            <a href="#" class = "btn">Normal button</a>
+            <a href="#" class = "btn-small">Small button</a>
+            <a href="#" class = "btn-large">Large button</a>
+            <a href="#" class = "btn indigo">Indigo button</a>
+            <a href="#" class = "btn disabled">Disabled button</a> <!--does not function-->
 
             <h4>Floating button</h4>
-            <a href="#"></a>
+            <a href="#" class = "btn-floating pink"></a>
 
             <h4>Other elements</h4>
-            <div>I am a div tag</div>
+            <div class = "btn">I am a div tag</div>
         </div>
         <div class="container">
-            <h4>Icons</h4>
+            <h4>Icons</h4> <!-- only works in materialize -->
+            <i class = "material-icons red-text">error</i>
+            <i class = "material-icons grey-text">cloud</i>
             
             <h4>Icons on Buttons</h4>
             <a href="#" class="btn indigo">
-                <span>Send</span>
+                <span>Send</span> <!--span makes things on the same line as before-->
+                <i class = "material-icons right">send</i>
                 
             </a>
             <a href="#" class="btn pink waves-effect waves-light">
+                <i class = "material-icons left">email</i>
                 <span>Email</span>
                 
             </a>
@@ -75,7 +92,7 @@
                 
             </a>
         </div>
-        <div class="container">
+        <div class="container"> <!-- easier to use a href for making btns -->
             <h4>Grids</h4>
             <div class="row">
                 <div class="col s3">content</div>
