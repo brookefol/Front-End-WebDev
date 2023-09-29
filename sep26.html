@@ -12,6 +12,15 @@
             .box {
                 height: 200px; 
                         }
+
+            .row {
+                margin: 40px auto;
+            }
+
+            .row > div{ 
+                background: lightblue;
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
@@ -98,7 +107,21 @@
                 <div class="col s3">content</div>
                 <div class="col s3">content</div>
                 <div class="col s3">content</div>
-                <div class="col s3">content</div>
+                <div class="col s3">content</div> <!--each content is a different place to put something, one row , must add up to12-->
+                <!--if space hasnt been filled yet, it keeps on the same line until all 12 is done-->
+            </div>
+            <div class = "row">
+                <div class = "col s12 m6 14" >content</div> <!--small mode = takes up all 12 columns, medium, takes up 1/4 column-->
+                <div class = "col s12 m6 14" >content</div> <!--way to make grids-->
+                <div class = "col s12 m6 14" >content</div> 
+                <div class = "col s12 m6 14" >content</div> 
+            </div>
+
+            <div class = "row">
+                <div class = "col s12 m8 14" >content</div> <!--small mode = takes up all 12 columns, medium, takes up 1/4 column-->
+                <div class = "col s12 m4 14" >content</div> <!--adds up to 12, number of s, m, = how big column is-->
+                <div class = "col s12 m4 14" >content</div> 
+                <div class = "col s12 m8 14" >content</div> 
             </div>
         </div>
         <!-- Compiled and minified JavaScript -->
