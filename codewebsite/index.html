@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lessons in Code </title>
+    </head>
+
+        <!--Import Google Icon Font-->
+        <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+        />
+        <!-- Compiled and minified CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+        />
+
+    <style>
+
+        body {
+            background-color:rgb(188, 235, 246);
+            
+        }
+        h1 {
+
+            color:whitesmoke;
+            text-align: center;
+            -webkit-text-stroke: 1.1mm lightskyblue;
+        }
+
+        h2 {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            text-align: center;
+            border-style: double;
+            border-radius: 20px;
+            border-color:steelblue;
+            
+        }
+
+        h3 {
+            font-size: xx-large;
+            text-align: center;
+        }
+    
+        .image {
+            margin-top: 20px;
+            margin-right: 300px;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+        }
+
+        .row {
+            background-color:  aliceblue;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .formintro {
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+      
+        .bio {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+
+        .submitform {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .goodbye {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:silver;
+            
+        }
+
+        .code {
+            text-align: center;
+        }
+        
+
+
+        
+
+    </style>
+    <body> 
+        <h1>Lessons in Code</h1>
+        <h2> Welcome to the world of Computer Science!</h2>
+
+        <img src="https://i.pinimg.com/736x/7f/15/da/7f15da5e8691e2bb7c19a0261341b269.jpg" class = "image" alt="dog" width="400" height="400">
+        <img src="https://miro.medium.com/v2/resize:fit:1360/1*u2mKnN8MGxCCIo2tN_dcNw.jpeg" class = "photo" alt="dog"  width="400" height="400">
+
+        <div class = "card-panel">
+            <h3 class = "blue-text text-lighten-4" >Have you ever wanted to learn how to code? Well you're in luck!</h3>
+        </div>
+        
+
+        <div class = "row">
+            <div class= "col s6">
+                <div class = "card blue-grey darken-1">
+                    <div class = "card-content white-text">
+                        <p> Here at "Lessons in Code", we offer free, 
+                            easy-to-learn tutorials in coding that are bound to get you started on your career 
+                            as a budding programmer! </p>
+                            </div>
+                    </div>
+                </div>
+
+                
+
+            <div class= "col s6">
+                <div class = "card blue-grey darken-1">
+                    <div class = "card-content white-text">
+                        <p> So sit back, get out your laptop, and lets begin! <br>
+                            After all, all great coders must start somewhere!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            
+
+        </div>
+        
+        
+        <h4 class = "formintro"> Please fill out this short form for registration:</h4>
+
+        <form action = #> <!-- username, password, email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <br><br>
+    
+            <label for="username">Username:</label>
+            <input type="text" id="username" name = "username" required >
+    
+    
+            <br><br>
+    
+    
+            <label for="password">Password:</label>
+            <input type="password" id = "password" name="password" required>
+    
+            <br><br>
+    
+        <!-- grade levels -->
+            <p> Select your grade level: </p>
+
+            <p>
+                <label>
+                  <input name= "option" type="radio" />
+                  <span>Kindergarten</span>
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  <input name= "option" type="radio" />
+                  <span>1st-5th grade</span>
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  <input name= "option" type="radio" />
+                  <span>6th-8th grade</span>
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  <input name= "option" type="radio" />
+                  <span>9th-12th grade</span>
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  <input name= "option" type="radio" />
+                  <span>College and Beyond</span>
+                </label>
+              </p>
+
+
+            <!-- <input type = "radio" value = "Kindergarten" id = "option-1">
+    
+            <label for="option-1">Kindergarten</label>
+    
+            <input type = "radio" value = "1st-5th" id = "option-2">
+    
+            <label for="option-2">1st-5th grade</label>
+    
+    
+            <input type = "radio" value = "6th-8th" id = "option-3">
+    
+            <label for="option-3">6th-8th grade</label>
+                 
+                
+            <input type = "radio" value = "9th-12th" id = "option-4">
+    
+            <label for="option-4">9th-12th grade</label>
+    
+            <input type = "radio" value = "12+" id = "option-5">
+            <label for="option-5">College and Beyond</label> -->
+    
+         
+    
+
+            <!-- <div class="input-field col s12">
+                <select>
+                  <option value="">What are you most excited to learn?</option>
+                  <option value="1">Fundamental Languages: Java, Python, etc...</option>
+                  <option value="2">Web Dev Languages: HTML, CSS, JavaScript, etc...</option>
+                  <option value="3">Game Development and Project Creation Languages: C++, Greenfoot, etc...</option>
+                  <option value="4">Something else!</option>
+                </select>
+              </div> -->
+
+            <!-- <label for="">What are you most excited to learn?</label>
+            <select name="question" id="question">
+                <option value="q1">Fundamental Languages: Java, Python, etc...</option>
+                <option value="q2">Web Dev Languages: HTML, CSS, JavaScript, etc...</option>
+                <option value="q3">Game Development and Project Creation Languages: C++, Greenfoot, etc...</option>
+                <option value="q4">Something else!</option>
+    
+                <br><br>
+    
+                
+            </select> -->
+    
+            <br>
+    
+            <label for="bio">Tell us a little about yourself!</label>
+            <br>
+            <textarea name = "bio" class = "bio" id = "bio" cols = "30" rows = "10" placeholder = "type here...">
+    
+            </textarea>
+    
+            <br><br>
+    
+            <div class = "card-panel grey lighten-3">
+                <input type = "submit" class = "submitform" value = "Submit your Form and Join the World of Lessons in Code!">
+            </div>
+            
+         </form>
+
+
+         <br> <br>
+
+         <ul>
+            <li class = "code"> <a href = https://www.w3schools.com/python/default.asp> Lessons in Python -- </a> </li>
+            <li class = "code"> <a href = https://www.w3schools.com/java/default.asp> Lessons in Java -- </a> </li>
+            <li class = "code"><a href = https://www.w3schools.com/html/default.asp> Lessons in HTML -- </a></li>
+         </ul>
+
+         <div class = "card-panel waves-light"> 
+            <a href = https://www.w3schools.com class = "goodbye"> Begin your coding journey! </a>
+         </div>
+            
+         
+         
+
+
+
+        
+    </body>
+</html>
