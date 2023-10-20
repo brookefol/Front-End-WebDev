@@ -25,7 +25,7 @@ let piggyBankAmount = 0.0;
 let button = document.getElementById("coinEnter");
 let input = document.getElementById("coinInput");
 
-button.addEventListener("click", function f() {
+button.addEventListener("click", function f() { // dont need to name it, embedded in code thru click of the buton
 
     const coinType = input.value.toLowerCase();
 
