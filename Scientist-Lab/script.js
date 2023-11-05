@@ -97,7 +97,7 @@ function displayScientistInformation(name) {
 
     const scientistInfo = document.getElementById('scientist-info'); // gets variable from scientists.html
 
-    scientistInfo.innerHTML = ` //prints out rest of object
+    scientistInfo.innerHTML = ` 
     <h2>${name}</h2>
  <p><strong>Field of Study:</strong> ${scientistData[name].field}</p>
  <p><strong>Notable Discovery:</strong> ${scientistData[name].discovery}</p>
