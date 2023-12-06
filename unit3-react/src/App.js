@@ -6,6 +6,7 @@ import Greeting from "./Greeting";
 function App() {
   let submitted = false;
   let userName = "";
+  
 
   function handleOnSubmit(name){
     submitted = true;
